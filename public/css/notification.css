@@ -1,0 +1,9 @@
+.badge {
+    position: relative;
+    font-size: xx-small;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px;
+
+    background: red;
+    color: white;
+}

@@ -1,0 +1,73 @@
+.registration-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.registration-form form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.input-group {
+    display: flex;
+    padding: 5px 0;
+}
+
+.input-group label {
+    width: 200px;
+    padding: 5px 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    border: 1px solid rgba(81, 203, 238, 1);
+    border-radius: 3px;
+}
+
+.input-group textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.input-group textarea:focus {
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    border: 1px solid rgba(81, 203, 238, 1);
+    border-radius: 3px;
+}
+
+.input-header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.input-group button {
+    margin-left: auto;
+}
+
+
+
+@media (max-width: 700px) {
+    .registration-form form {
+        padding: 20px 15px;
+        margin-top: 20px;
+    }
+}

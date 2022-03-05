@@ -1,0 +1,26 @@
+.contact-banner {
+    margin: 50px 130px;
+    color: #FFFFFF;
+}
+
+.contact-banner h3 {
+    font-size: 32px;
+}
+
+.contact-banner a {
+    text-decoration: none;
+    color: #41bff9 !important;
+}
+
+.contacts-back {
+    background-color: black;
+    height: 100%;
+}
+
+
+@media (max-width: 700px) {
+    .contact-banner {
+        margin: 50px 30px;
+        color: #FFFFFF;
+    }
+}

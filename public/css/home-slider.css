@@ -1,0 +1,227 @@
+/* slider */
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+
+}
+
+.myslider {
+    height: 100%;
+    display: none;
+    overflow: hidden;
+}
+
+.pre,
+.nex {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.pre:hover,
+.nex:hover {
+    color: rgb(5, 132, 250);
+}
+
+.nex {
+    right: 0px;
+}
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active,
+.dot:hover {
+    border-color: rgb(5, 132, 250);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.txt {
+    position: absolute;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40px;
+    left: 15%;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes posi {
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 15%;
+    }
+}
+
+@keyframes posi {
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 15%;
+    }
+}
+
+.txt h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 25%;
+    text-align: center;
+    font-size: 64px;
+}
+
+.txt p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.txt a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .txt {
+        display: none;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .txt h1 {
+        margin-top: 15%;
+        font-size: 50px;
+    }
+
+    .txt {
+        left: 10%;
+    }
+
+    @-webkit-keyframes posi {
+        from {
+            left: 20%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+
+    @keyframes posi {
+        from {
+            left: 20%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .txt h1 {
+        margin-top: 10%;
+        font-size: 45px;
+    }
+
+    .txt {
+        left: 10%;
+    }
+
+    @-webkit-keyframes posi {
+        from {
+            left: 20%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+
+    @keyframes posi {
+        from {
+            left: 20%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    .txt h1 {
+        margin-top: 8%;
+        font-size: 40px;
+    }
+
+    .txt {
+        left: 10%;
+    }
+
+    @-webkit-keyframes posi {
+        from {
+            left: 20%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+
+    @keyframes posi {
+        from {
+            left: 20%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+}
